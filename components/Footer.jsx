@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
@@ -29,14 +30,16 @@ const Footer = () => (
           <p className="font-normal text-[14px] text-white opacity-50">
             Copyright © 2023 🌌 All rights reserved
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 z-10">
             {socials.map((social) => (
-              <img
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
-              />
+              <Link href={social.url} target="_blank" rel="noreferrer noopener">
+                <img
+                  key={social.name}
+                  src={social.src}
+                  alt={social.name}
+                  className="w-[24px] h-[24px] object-contain cursor-pointer"
+                />
+              </Link>
             ))}
           </div>
         </div>

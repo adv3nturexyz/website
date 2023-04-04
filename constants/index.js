@@ -88,14 +88,17 @@ export const insights = [
 export const socials = [
   {
     name: 'twitter',
-    url: '/social-twitter.svg',
+    src: '/social-twitter.svg',
+    url: 'https://twitter.com/adv3nturers',
   },
   {
     name: 'telegram',
-    url: '/social-telegram.svg',
+    src: '/social-telegram.svg',
+    url: 'https://t.me/adv3nturers',
   },
   {
     name: 'discord',
-    url: '/social-discord.svg',
+    src: '/social-discord.svg',
+    url: 'https://discord.gg/DGQCrEjWsP',
   },
 ];
