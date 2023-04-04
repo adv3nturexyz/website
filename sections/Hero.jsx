@@ -16,7 +16,7 @@ const Hero = () => (
     >
       <div className="flex justify-center items-center flex-col relative z-10">
         <motion.h1 variants={textVariant(1.1)} className={`${styles.heroHeading} flex flex-row justify-center items-center`}>
-          <h1 className={styles.heroHeading}>Web3 Gaming</h1>
+          <p className={styles.heroHeading}>Web3 Gaming</p>
           {/* A */}
           {/* <div className={styles.heroDText} /> */}
           {/* v3nture */}

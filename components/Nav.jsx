@@ -67,7 +67,7 @@ export default function Nav() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 z-10">
                 <Link href="https://docs.adv3nture.xyz/" target="_blank" rel="noreferrer noopener">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow">
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow">
                         Docs
                     </button>
                 </Link>
