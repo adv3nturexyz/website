@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+import Nav from './Nav';
 import { TypingText, TitleText } from './CustomTexts';
 import ExploreCard from './ExploreCard';
 import ItemsGame from './ItemsGame';
@@ -7,7 +7,7 @@ import InsightCard from './InsightCard';
 import Footer from './Footer';
 
 export {
-  Navbar,
+  Nav,
   TitleText,
   TypingText,
   ItemsGame,

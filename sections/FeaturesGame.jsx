@@ -8,7 +8,7 @@ import { ItemsGame, TitleText, TypingText } from '../components';
 import { featuresGame } from '../constants';
 
 const GetStarted = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10`} id="features">
     <motion.div
       variants={staggerContainer}
       initial="hidden"

@@ -8,7 +8,7 @@ import { InsightCard, TitleText, TypingText } from '../components';
 import { insights } from '../constants';
 
 const Insights = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10`} id="press">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
