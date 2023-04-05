@@ -24,6 +24,11 @@ const MyApp = ({ Component, pageProps }) => (
           gtag('config', 'G-K4TVEB7SLK');
         `}
       </Script>
+      <Script id='mcjs' strategy="afterInteractive">
+        {`
+          !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5f31e382e95fa2e353915e688/31b74d347e4e4c5fa70983123.js");
+        `}
+      </Script>
     </Head>
     <Component {...pageProps} />
   </>
