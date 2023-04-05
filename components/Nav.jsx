@@ -63,7 +63,7 @@ const Nav = () => (
               </div>
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 z-10">
-              <Link href="https://docs.adv3nture.xyz/" target="_blank" rel="noreferrer noopener">
+              <Link href="https://docs.omniv3rse.com/" target="_blank" rel="noreferrer noopener">
                 <button type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow">
                   Docs
                 </button>
