@@ -16,19 +16,30 @@ const MyApp = ({ Component, pageProps }) => (
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-K4TVEB7SLK"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-K4TVEB7SLK');
-        `}
-      </Script>
-      <Script id="mcjs" strategy="afterInteractive">
-        {`
+          gtag('config', 'G-K4TVEB7SLK', {
+            page_path: window.location.pathname,
+          });
+          `,
+        }}
+      />
+      {/* <!-- Mailchimp code snippet --> */}
+      <Script
+        id="mcjs"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
           !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5f31e382e95fa2e353915e688/31b74d347e4e4c5fa70983123.js");
-        `}
-      </Script>
+          `,
+        }}
+      />
     </Head>
     <Component {...pageProps} />
   </>
