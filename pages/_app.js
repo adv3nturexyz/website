@@ -11,30 +11,29 @@ const MyApp = ({ Component, pageProps }) => (
       <link rel="icon" href="/favicon.ico" />
       <link rel="preconnect" href="https://stijndv.com" />
       <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-K4TVEB7SLK"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-K4TVEB7SLK');
+        `}
+      </Script>
+      {/* <!-- Mailchimp code snippet --> */}
+      {/* <Script
+        id="mcjs"
+        strategy="afterInteractive"
+      >
+        {`
+          !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5f31e382e95fa2e353915e688/31b74d347e4e4c5fa70983123.js");
+        `}
+      </Script> */}
     </Head>
-    {/* <!-- Google tag (gtag.js) --> */}
-    <Script
-      src="https://www.googletagmanager.com/gtag/js?id=G-K4TVEB7SLK"
-      strategy="afterInteractive"
-    />
-    <Script id="google-analytics" strategy="afterInteractive">
-      {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-K4TVEB7SLK');
-      `}
-    </Script>
-    {/* <!-- Mailchimp code snippet --> */}
-    <Script
-      id="mcjs"
-      strategy="afterInteractive"
-    >
-      {`
-        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5f31e382e95fa2e353915e688/31b74d347e4e4c5fa70983123.js");
-      
-      `}
-    </Script>
     <Component {...pageProps} />
   </>
 );
