@@ -89,12 +89,12 @@ export const socials = [
   {
     name: 'twitter',
     src: '/social-twitter.svg',
-    url: 'https://twitter.com/adv3nturers',
+    url: 'https://twitter.com/omniv3rse_',
   },
   {
     name: 'telegram',
     src: '/social-telegram.svg',
-    url: 'https://t.me/adv3nturers',
+    url: 'https://t.me/omniv3rse',
   },
   {
     name: 'discord',
